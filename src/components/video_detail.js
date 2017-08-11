@@ -1,10 +1,12 @@
 import React,{ Component } from 'react';
 import ReactPlayer from 'react-player';
+import {ProgressBar} from 'react-player-controls';
+import {SoundOnButton} from 'react-player-controls';
 
 class VideoDetail extends React.Component {
     constructor(props){
         super(props);
-        this.state = { isLoaded : false}
+        this.state = { isLoaded : false, isEnabled : true}
     }
 
 
@@ -32,6 +34,10 @@ class VideoDetail extends React.Component {
                 <div className="video-detail col-md-8">
                     <div className="embed-responsive embed-responsive-16by9">
                         <ReactPlayer onEnded={() => this.onVideoEndedNow() } url={url}  playing  />
+                        <SoundOnButton
+                            isEnabled={this.state.isEnabled}
+                            onClick={() => alert('Turn off sound')}
+                        />
                     </div>
 
                 </div>

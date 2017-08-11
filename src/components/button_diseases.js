@@ -21,7 +21,7 @@ class ButtonDetail extends Component{
     {
         return (
 
-            <div className="video-detail col-md-2">
+            <div className="video-detail col-md-4">
                 <div>
                     <ButtonGroup>
                         <Button bsStyle="primary" onClick={(event) => this.onInputChange(event.target.value)} value="Hepatitis treatment" bsSize="large" block>Hepatitis</Button>

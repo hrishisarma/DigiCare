@@ -5,7 +5,6 @@
   "main": "index.js",
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
-
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
@@ -34,6 +33,7 @@
     "react-button-group": "^1.0.2",
     "react-dom": "^0.14.3",
     "react-player": "^0.19.1",
+    "react-player-controls": "^0.5.14",
     "react-redux": "4.0.0",
     "react-router": "^2.0.1",
     "redux": "^3.0.4",

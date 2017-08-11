@@ -14,9 +14,9 @@ const VideoList = (props)=> {
     });
 
     return (
-        <ul className="col-md-1 list-group">
+        <div id="col-md-4 sliderFrame">
             {videoItems}
-        </ul>
+        </div>
 
 
     );
